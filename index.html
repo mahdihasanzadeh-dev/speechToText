@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>تبدیل صوت به متن</title>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">   
+        <div class="notebook">
+            
+        </div>
+    </div>
+    <!-- container -->
+    <!-- loading -->
+    <div class="loading">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <!-- loading -->
+    <!-- micro-container -->
+    <div class="micro-container">
+        <div class="micro-box copy-to-clipboard">
+            <i class="fas fa-copy"></i>
+        </div>
+        <div class="micro-box start-convert">
+            <i class="fas fa-microphone"></i>
+        </div>
+        <div class="micro-box  menu-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="micro-box" id="closeMenu">
+            <i class="fa fa-times" ></i>
+        </div>    
+    </div>
+    <!-- micro-container -->
+    <!-- nav -->
+    <div id="nav">
+        <div class="filter-items-container">
+            <div class="form-control">
+                <label>عبارت تغییر نوشتار به انگلیسی</label>
+                <input type="text" value="" placeholder="انگلیسی تایپ کن" id="changeToEnglish" />
+            </div>
+            <div class="form-control">
+                <label>عبارت تغییر نوشتار به فارسی</label>
+                <input type="text" value="" placeholder="type in persian" id="changeToPersian" dir="ltr"/>
+            </div>
+            <div class="form-control">
+                <label>عبارت  رفتن  به خط بعد</label>
+                <input type="text" value="" placeholder="برو به خط بعد" id="nextLine" />
+            </div>
+            <div class="form-control">
+                <label>عبارت  پاک کردن صفحه</label>
+                <input type="text" value="" placeholder="صفحه پاک شود" id="clearPage" />
+            </div>
+            <div class="form-control">
+               <button id="saveOpion">
+                   ذخیره تنظیمات
+               </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- nav -->
+    <!-- notification-container -->
+    <div class="notification-container">
+       
+    </div>
+    <!-- notification-container -->
+    <script src="code.js">
+         
+    </script>
+</body>
+</html>
