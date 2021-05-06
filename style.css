@@ -66,16 +66,11 @@ body{
     box-shadow: 0 0 6px 3px rgb(0 0 0 / 10%);
     border-radius: 3px;
     background-position: 4rem 0, 0 5px;
-    background-size: 100% 3rem;
-    margin-bottom: -100px;
-    z-index: 4;
     position: relative;
     text-align: justify;
     max-width: 100%;
     min-height: 300px;
     margin-top: 14px;
-    
-    
     
 }
 .form-control button{
@@ -178,6 +173,7 @@ body{
     margin: 5px;
     transform: translateX(120%);
     transition: all 1s ease-in;
+    z-index: 1000;
 }
 @keyframes jump {
 	0%, 100% {

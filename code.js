@@ -238,3 +238,9 @@ function createNotification(message,color){
       notif.remove()   
   },3000)
 }
+
+
+
+
+ 
+  
