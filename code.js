@@ -89,7 +89,7 @@ async function SpeechToTextHandler(){
   await navigator.mediaDevices.getUserMedia({ audio: true }).then((stream)=>{
     window.SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
-    var recognition = new SpeechRecognition();
+    var recognition = new webkitSpeechRecognition();
     console.log(icon.classList[1])
     if(icon.classList[1]==='fa-microphone')
     {
@@ -105,7 +105,7 @@ async function SpeechToTextHandler(){
    
     recognition.lang = "fa-IR";
     recognition.interimResults = true;
-  recognition.continuous = false;
+    recognition.continuous = false;
     recognition.start();
     recognition.addEventListener("end", recognition.start);
   
