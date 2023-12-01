@@ -86,7 +86,7 @@ const notebook = document.querySelector('.notebook')
 startConvert.addEventListener('click',SpeechToTextHandler)
 async function SpeechToTextHandler(){
   const icon = startConvert.querySelector('i')
-  await navigator.mediaDevices.getUserMedia({ audio: true }).then((stream)=>{
+ 
     window.SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
     var recognition = new webkitSpeechRecognition();
@@ -171,7 +171,7 @@ async function SpeechToTextHandler(){
       recognition.abort();
      console.log(recognition)
     }
-  }).catch((err)=>createNotification('برای استفاده از این ابزار باید اجازه دسترسی به میکروفن را بدهید', '#e85642'))
+
  
   
  
