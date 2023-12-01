@@ -105,7 +105,7 @@ async function SpeechToTextHandler(){
    
     recognition.lang = "fa-IR";
     recognition.interimResults = true;
-    recognition.continuous = false;
+    recognition.continuous = true;
     recognition.start();
     recognition.addEventListener("end", recognition.start);
   
